@@ -1,0 +1,54 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Channel Archiver",
+    "version": "1.0.0",
+    "description": "Archive transcripts, comments, and chats from entire YouTube channels.",
+    "permissions": [
+        "storage",
+        "downloads"
+    ],
+    "host_permissions": [
+        "*://*.youtube.com/*"
+    ],
+    "background": {
+        "service_worker": "background/service-worker.js",
+        "type": "module"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "content/content-script.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "content/page-script.js",
+                "content/injected-bundle.js",
+                "content/popup.css"
+            ],
+            "matches": [
+                "*://*.youtube.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_title": "YouTube Channel Archiver",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    }
+}

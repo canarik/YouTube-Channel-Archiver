@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        h2 {
+            margin-top: 0;
+            color: #ff0000;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .note {
+            background: #333;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h2>YouTube Channel Archiver</h2>
+    <p><strong>How to use:</strong></p>
+    <ol>
+        <li>Go to any YouTube channel page</li>
+        <li>Look for the red <strong>"YCA Scan"</strong> button near the channel header</li>
+        <li>Click it to scan all videos</li>
+        <li>Downloads will start automatically</li>
+    </ol>
+    
+    <div class="note">
+        <strong>Note:</strong> The button only appears on channel pages (e.g., youtube.com/@channelname/videos)
+    </div>
+
+    <div class="settings" style="margin-top: 20px; border-top: 1px solid #333; padding-top: 10px;">
+        <label style="display: flex; align-items: center; cursor: pointer;">
+            <input type="checkbox" id="xlsx-checkbox" style="margin-right: 10px;">
+            Export Comments as XLSX (Excel)
+        </label>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
