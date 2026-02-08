@@ -18,7 +18,7 @@ A powerful Google Chrome extension designed to archive entire YouTube channels. 
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/canarik/YouTube-Channel-Archiver.git
+    git clone https://github.com/canarik/YouTube-Channel-Archiver
     ```
 
 2. **Open Chrome Extensions:**
